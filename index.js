@@ -10,6 +10,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
+  console.log('It Works!! Path Hit: ' + request.url);
   response.render('pages/index');
 });
 
